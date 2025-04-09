@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp2"
+    xmlns:pages="clr-namespace:MauiApp2.Pages"
+    
+    Title="MauiApp2">
+
+    <Shell.FlyoutHeader>
+        <Label Text="BookShop" FontSize="24" FontAttributes="Bold" Padding="10"/>
+    </Shell.FlyoutHeader>
+    <ShellContent Route="login" ContentTemplate="{DataTemplate pages:LoginPage}" Title="Вход"/>
+    <ShellContent Route="register" ContentTemplate="{DataTemplate pages:RegisterPage}" Title="Регистрация"/>
+    <ShellContent Route="books" ContentTemplate="{DataTemplate pages:BookPage}" Title="Книги"/>
+    <ShellContent Route="addbook" ContentTemplate="{DataTemplate pages:AddBookPage}" Title="Добавить книги"/>
+
+</Shell>
