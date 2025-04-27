@@ -15,7 +15,7 @@ namespace MauiApp2
         protected override async void OnStart()
         {
             
-            await DBService.InitAsync();
+
         }
         //protected override Window CreateWindow(IActivationState? activationState)
         //{
